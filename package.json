@@ -1,0 +1,15 @@
+{
+    "name": "shopify-mcp-remote",
+    "version": "1.0.0",
+    "description": "Remote Shopify MCP server for Claude/Cowork",
+    "scripts": {
+          "start": "supergateway --port ${PORT:-3000} --stdio \"shopify-mcp --clientId ${SHOPIFY_CLIENT_ID} --clientSecret ${SHOPIFY_CLIENT_SECRET} --domain ${SHOPIFY_DOMAIN}\""
+    },
+    "dependencies": {
+          "shopify-mcp": "latest",
+          "supergateway": "latest"
+    },
+    "engines": {
+          "node": ">=18"
+    }
+}
